@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;600&family=Spline+Sans:wght@400;600&display=swap');
 
-body,html {
+body,
+html {
   background-color: #6594F4;
   overflow-y: hidden;
   padding: 0;
@@ -30,10 +31,12 @@ body,html {
       transform: scale(0.8) translateX(200px);
       top: -150px;
     }
+
     @media (max-width: 800px) {
       transform: scale(0.7) translateX(600px);
       top: -150px;
     }
+
     @media (max-width: 600px) {
       transform: scale(0.5) translateX(-188px);
       right: auto;
@@ -42,11 +45,13 @@ body,html {
       top: -250px;
       margin-left: -600px;
     }
+
     @media (max-width: 375px) {
       transform: scale(0.45) translateX(-50px);
     }
 
   }
+
   .content {
     position: absolute;
     top: 80px;
@@ -54,7 +59,7 @@ body,html {
     flex-direction: column;
     gap: 80px;
 
-    
+
     h1 {
       font-family: 'Spline Sans', sans-serif;
       font-weight: bold;
@@ -63,6 +68,7 @@ body,html {
       max-width: 500px;
 
     }
+
     p {
       font-family: 'Spline Sans', sans-serif;
       font-weight: normal;
@@ -77,17 +83,23 @@ body,html {
       padding: 10px;
       transition: all 1s ease-in-out;
       border-radius: 20px;
-      
+
       &:hover {
         color: rgb(255, 115, 0);
         background-color: rgb(255, 255, 255);
       }
     }
 
-    h1,p {
+    h1,
+    p {
       margin: 0 30px 0 100px;
+      padding: 15px;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.56);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
 
-      
       @media (max-width: 1024px) {
         text-align: center;
         margin: 0 auto;
@@ -114,6 +126,7 @@ nav {
     margin: 0;
     padding: 5px;
     width: 100%;
+
     li {
       a {
         text-decoration: none;
@@ -121,6 +134,7 @@ nav {
         transition: all 1s ease-in-out;
         padding: 10px;
         border-radius: 20px;
+
         &:hover {
           color: rgb(255, 115, 0);
           background-color: rgb(135, 147, 182);
@@ -130,9 +144,11 @@ nav {
           font-size: 20px;
         }
       }
+
       font-size: 30px;
       padding: 5px;
-      font-family: 'Spline Sans', sans-serif;
+      font-family: 'Spline Sans',
+      sans-serif;
     }
   }
 }
